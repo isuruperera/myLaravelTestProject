@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-    </head>
-    <body>
+@extends('layout')
 
-
-        @foreach ($people as $person) 
-            <li>{{$person}}</li>
-        @endforeach
-
-
-    </body>
-</html>
+@section('content')
+    <h1> The Welcome page Goes Here </h1>
+@stop
