@@ -13,12 +13,6 @@
 
 
 
-Route::get('about', function(){
-	return view('about.about');
-});
+Route::get('/about','PagesController@about');
 
-Route::get('/',function(){
-	$people = ['AAAAAAAAAA','B','C'];
-	return view('welcome', compact('people'));
-
-});
+Route::get('/','PagesController@home');
